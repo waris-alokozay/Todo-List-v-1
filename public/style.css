@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    120deg,
+    rgb(251, 218, 218),
+    rgb(245, 197, 182),
+    rgb(253, 203, 186)
+  );
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.brand {
+  padding: 12px 10px;
+  color: rgba(0, 0, 0, 0.662);
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+
+ul {
+  margin: 5% 0;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.item {
+  display: flex;
+  font-size: x-large;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(167, 156, 156, 0.427);
+  padding: 12px 12px;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item > p {
+  margin: 0 20px;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: brown;
+}
+
+.header {
+  padding: 2% 7%;
+  background-color: rgb(205, 57, 38);
+  color: rgb(255, 167, 143);
+  font-size: 1rem;
+  box-shadow: 6px 5px 10px 1px coral;
+  border-radius: 3px;
+}
+
+#addItem {
+  width: 300px;
+  height: 50px;
+  border: none;
+  padding: 10px 0;
+  background: transparent;
+  border-bottom: 2px solid brown;
+  outline: none;
+  font-size: 1.5rem;
+}
+#addItem::placeholder {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+#addBtn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.7rem;
+  border: none;
+  background-color: rgb(205, 57, 38);
+  color: #fff;
+}
+#addBtn:hover {
+  background-color: rgb(141, 34, 20);
+  transition: 0.2s ease-in-out;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 105px 0;
+  color: rgba(255, 255, 255, 0.676);
+}
